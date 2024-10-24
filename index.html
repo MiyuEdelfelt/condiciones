@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condiciones</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <h1>Ejercicio 1</h1>
+    <!-- Ejercicio 1 -->
+    <img id="image" src="assets/img/saber.jpg" alt="Placeholder Image">
+    
+    <!-- Ejercicio 2 -->
+    <h1>Selecciona tus stickers</h1>
+
+    <!-- Imágenes con inputs para cada sticker -->
+    <div class="sticker-container">
+        <div class="sticker">
+            <img src="assets/img/sticker1.png" alt="Sticker 1">
+            <input type="number" id="sticker1" value="0" min="0" max="10">
+        </div>
+        <div class="sticker">
+            <img src="assets/img/sticker2.jpg" alt="Sticker 2">
+            <input type="number" id="sticker2" value="0" min="0" max="10">
+        </div>
+        <div class="sticker">
+            <img src="assets/img/sticker3.jpg" alt="Sticker 3">
+            <input type="number" id="sticker3" value="0" min="0" max="10">
+        </div>
+    </div>
+
+    <!-- Botones para calcular y resetear los stickers seleccionados -->
+    <div class="button-container">
+        <button id="calculate">Calcular stickers</button>
+        <button id="reset">Resetear contador</button>
+    </div>
+
+    <!-- Párrafo donde se mostrará el resultado -->
+    <p id="result"></p>
+
+    <script src="js/ejercicio1.js"></script>
+    <script src="js/ejercicio2.js"></script>
+
+</body>
+</html>
