@@ -1,8 +1,49 @@
 /* Estilo general de la página */
 body {
     font-family: Arial, sans-serif;
-    text-align: center;
     padding: 20px;
+    margin: 0;
+    text-align: center;
+}
+
+/* Navbar */
+nav {
+    background-color: #333;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+/* Separar las secciones */
+section {
+    margin-bottom: 40px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
 }
 
 /* Contenedor de stickers */
@@ -18,12 +59,11 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px; /* Añadimos espacio entre la imagen y el input */
+    gap: 10px;
 }
 
-/* El input tendrá el mismo ancho que la imagen */
 .sticker input {
-    width: 150px; /* Asegura que el input tenga el mismo ancho que las imágenes */
+    width: 150px;
     padding: 5px;
     text-align: center;
 }
@@ -32,7 +72,7 @@ body {
 .button-container {
     display: flex;
     justify-content: center;
-    gap: 20px; /* Espacio entre los botones */
+    gap: 20px;
     margin-top: 20px;
 }
 
@@ -41,7 +81,7 @@ button {
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
-    width: 150px; /* Asegura que los botones tengan el mismo ancho */
+    width: 150px;
     background-color: #4CAF50;
     color: white;
     border: none;
@@ -53,7 +93,7 @@ button:hover {
 }
 
 #reset {
-    background-color: #f44336; /* Color distinto para el botón de reset */
+    background-color: #f44336;
 }
 
 #reset:hover {
@@ -61,7 +101,7 @@ button:hover {
 }
 
 /* Estilo del párrafo de resultado */
-#result {
+#result, #password-result {
     font-size: 18px;
     font-weight: bold;
     margin-top: 20px;
@@ -78,18 +118,8 @@ img {
 }
 
 /* Ejercicio 3 */
-
-/* Estilo de los selectores */
 .password-container select {
     margin: 10px;
     padding: 5px;
     font-size: 16px;
-}
-
-/* Estilo para el párrafo de resultado */
-#password-result {
-    margin-top: 20px;
-    font-size: 18px;
-    font-weight: bold;
-    color: #333;
 }

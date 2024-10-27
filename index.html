@@ -9,91 +9,95 @@
 </head>
 
 <body>
-    <h1>Ejercicio 1</h1>
+    <!-- Navbar -->
+    <nav>
+        <ul>
+            <li><a href="#ejercicio1">Ejercicio 1</a></li>
+            <li><a href="#ejercicio2">Ejercicio 2</a></li>
+            <li><a href="#ejercicio3">Ejercicio 3</a></li>
+        </ul>
+    </nav>
+
     <!-- Ejercicio 1 -->
-    <img id="image" src="assets/img/saber.jpg" alt="Placeholder Image">
+    <section id="ejercicio1">
+        <h1>Agregar/eliminar borde</h1>
+        <img id="image" src="assets/img/saber.jpg" alt="Placeholder Image">
+    </section>
 
     <!-- Ejercicio 2 -->
-    <h1>Selecciona tus stickers</h1>
-
-    <!-- Imágenes con inputs para cada sticker -->
-    <div class="sticker-container">
-        <div class="sticker">
-            <img src="assets/img/sticker1.png" alt="Sticker 1">
-            <input type="number" id="sticker1" value="0" min="0" max="10">
+    <section id="ejercicio2">
+        <h1>Selecciona tus stickers</h1>
+        <div class="sticker-container">
+            <div class="sticker">
+                <img src="assets/img/sticker1.png" alt="Sticker 1">
+                <input type="number" id="sticker1" value="0" min="0" max="10">
+            </div>
+            <div class="sticker">
+                <img src="assets/img/sticker2.jpg" alt="Sticker 2">
+                <input type="number" id="sticker2" value="0" min="0" max="10">
+            </div>
+            <div class="sticker">
+                <img src="assets/img/sticker3.jpg" alt="Sticker 3">
+                <input type="number" id="sticker3" value="0" min="0" max="10">
+            </div>
         </div>
-        <div class="sticker">
-            <img src="assets/img/sticker2.jpg" alt="Sticker 2">
-            <input type="number" id="sticker2" value="0" min="0" max="10">
-        </div>
-        <div class="sticker">
-            <img src="assets/img/sticker3.jpg" alt="Sticker 3">
-            <input type="number" id="sticker3" value="0" min="0" max="10">
-        </div>
-    </div>
 
-    <!-- Botones para calcular y resetear los stickers seleccionados -->
-    <div class="button-container">
-        <button id="calculate">Calcular stickers</button>
-        <button id="reset">Resetear contador</button>
-    </div>
+        <div class="button-container">
+            <button id="calculate">Calcular stickers</button>
+            <button id="reset">Resetear contador</button>
+        </div>
 
-    <!-- Párrafo donde se mostrará el resultado -->
-    <p id="result"></p>
+        <p id="result"></p>
+    </section>
 
     <!-- Ejercicio 3 -->
-    <h1>Verificación de Password</h1>
-    <div class="password-container">
-        <!-- Tres selectores con dígitos del 1 al 9 -->
-        <select id="select1">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-        </select>
+    <section id="ejercicio3">
+        <h1>Verificación de Password</h1>
+        <div class="password-container">
+            <select id="select1">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
 
-        <select id="select2">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-        </select>
+            <select id="select2">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
 
-        <select id="select3">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-        </select>
-    </div>
+            <select id="select3">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
+        </div>
 
-    <!-- Botón para verificar el password -->
-    <button id="ingresar">Ingresar</button>
-
-    <!-- Párrafo donde se mostrará el resultado del password -->
-    <p id="password-result"></p>
-
-
+        <button id="ingresar">Ingresar</button>
+        <p id="password-result"></p>
+    </section>
 
     <script src="js/ejercicio1.js"></script>
     <script src="js/ejercicio2.js"></script>
     <script src="js/ejercicio3.js"></script>
-
 </body>
 
 </html>
