@@ -8,7 +8,7 @@ function verificarPassword() {
     //Combinamos los 3 valores en un solo string 
     const password = select1 + select2 + select3;
 
-    //Obtenemos el p+arrafo donde se muestra el resultado
+    //Obtenemos el párrafo donde se muestra el resultado
     const resultParagraph = document.getElementById('password-result');
     
     //Verificar las posibles password 
